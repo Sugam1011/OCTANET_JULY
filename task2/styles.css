@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d043f;
+    color: rgb(2, 29, 25);
+    font-family: "Poppins", sans-serif;
+}
+.background{
+    position: fixed;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+h1{
+    text-align: center;
+    color:antiquewhite;
+    position:relative;
+    margin-top: 2em;
+    font-size: 300%;
+}
+.main{
+    border: solid;
+    min-height: 20vh;
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 25%;
+    background-color: rgba(255,255,255,0.13);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(14, 12, 12, 0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+}   
+
+form input, 
+form button {
+    padding: 1rem;
+    padding-left: 1rem;
+    font-size: 1.3rem;
+    border: none;
+    background: white;
+    border-radius: 2rem;
+    backdrop-filter: blur(10px);
+}
+
+form button {
+    padding: 0.5rem;
+    padding-left: 1rem;
+    font-size: 1.8rem;
+    border: none;
+    background: white;
+    border-radius: 2rem;
+    backdrop-filter: blur(10px);
+    color: rgb(8, 16, 19);
+    background: white;
+    cursor: pointer;
+    transition: all 0.3 ease;
+    margin-left: 0.5rem;
+}
+
+form button:hover {
+    color: white;
+    background: rgb(9, 180, 248);
+}
+
+.fa-plus-circle {
+    margin-top: 0.3rem;
+    margin-left: -8px;
+}   
+
+.Selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    margin: 0.5rem;
+    padding-left: 0.8rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 2rem;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.DButton, 
+.CButton {
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.CButton {
+    background: rgb(9, 180, 248);
+}
+
+.DButton {
+    border-top-right-radius: 1.75rem;
+    border-bottom-right-radius: 1.75rem;
+    background:grey;
+}
+
+.todo-item {
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash, 
+.fa-check-circle {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.slide {
+    transform: translateX(10rem);
+    opacity: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select {
+    margin: 1rem; 
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+select {
+    color:rgb(9, 180, 248);
+    width: 10rem;
+    height: 3.2rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background:rgb(9, 180, 248);
+    top: 0;
+    right: 0;
+    padding: 1.2rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.select::hover::after {
+    background: white;
+    color: rgb(9, 180, 248);
+}
